@@ -1,3 +1,4 @@
+#' @export
 write_nifti_2_hdr = function(hdr, filename = tempfile()) {
 
   fid = file(filename, open = "wb")
@@ -86,7 +87,7 @@ write_nifti_2_hdr = function(hdr, filename = tempfile()) {
 
 
 
-
+#' @export
 write_cifti = function(res, filename = tempfile()) {
 
  # filename = tempfile()
