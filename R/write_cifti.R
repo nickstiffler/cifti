@@ -163,7 +163,6 @@ write_cifti = function(res, filename = tempfile()) {
   cifti_dim = img_dim[6:8]
   vals = array(vals, dim = cifti_dim)
 
-  write.filename = file(filename, "wb")
-  writeBin(vals, write.filename)
-  close(write.filename)
+  writeBin(vals, fid)
+  close(fid)
 }
